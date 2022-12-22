@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+.liclass:hover {
+  text-decoration: line-through;
+}
+
+.li-active {
+  text-decoration: line-through;
+}
+
+h1 {
+  font-family: "Sniglet", cursive;
+  text-align: center;
+}
+
+body {
+  font-family: "Sniglet", cursive;
+  background-color: #eec;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.trash-img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+div {
+  background-color: white;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+#textbox {
+  color: gray;
+  border-style: dotted;
+  margin-bottom: 10px;
+  background-color: #e5e5e5;
+  border: none;
+  padding: 5px 0px;
+  padding-left: 10px;
+}
+
+#button:hover {
+  background-color: #9be28a;
+}
+
+button {
+  outline: 0;
+  background-color: white;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Sniglet", cursive;
+}
+
+#button {
+  background-color: #beecb3;
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  padding: 0 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todo List</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+<div>
+  <h1>My To-Do List -by Sahil</h1>
+
+  <input type="text" id="textbox" placeholder="New item..."></input>
+  <button id="button">Add item</button>
+
+  <ul id="list">
+  </ul>
+</div>
+
+<script>
+	var ullist = document.getElementById("list");
+var list;
+var lastID = 0;
+var imagette = document.getElementsByClassName("trash-img");
+
+var button = document.getElementById("button");
+
+const input = document.getElementById("textbox");
+
+button.addEventListener("click", () => {
+  makeStuff();
+});
+
+function getVal() {
+  const val = document.querySelector("input").value;
+  return val;
+}
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    makeStuff();
+  }
+});
+
+function makeStuff() {
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(getVal()));
+  ullist.appendChild(li);
+  input.value = "";
+  li.id = lastID;
+  lastID++;
+
+  var button = document.createElement("button");
+  button.addEventListener("click", (e) => {
+    var tempChild = document.getElementById(li.id);
+    ullist.removeChild(tempChild);
+    console.log("ha");
+  });
+
+  li.addEventListener("click", (e) => {
+    if (li.className === "li-active") {
+      li.classList.remove("li-active");
+    } else {
+      li.className = "li-active";
+    }
+  });
+
+  var image = document.createElement("img");
+  image.src = "https://cdn-icons-png.flaticon.com/512/484/484662.png";
+  image.className = "trash-img";
+  li.className = "liclass";
+  button.appendChild(image);
+  li.appendChild(button);
+  var list = ullist.querySelectorAll("li");
+  console.log(list[0]);
+}
+
+</script>
+</body>
+</html>

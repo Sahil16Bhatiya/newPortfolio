@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SahilBhatiya</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body  onload="audio.play()">
+
+<div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h2 class="logo">Ahmedavadi  <span>Coder</span></h2>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+
+            </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          
+          <header>
+            <div class="time">
+              <p>L D COLLEGE OF ENGINEERING</p>
+            <div id="time">
+                
+            </div>
+          
+            </div>
+            
+
+            <div class="overlay">
+
+              <div class="inner">
+
+                <div id="name">
+                  <marquee onMouseOver="this.stop()" onMouseOut="this.start()" width="100%" direction="right" height="100px" class="title">
+                     <font>Sa</font><span>hil</span> Bhatiya
+                  </marquee>
+                  
+                </div>
+                <button class="btn"><a href="about.html"> Read more</a></button>
+                
+              </div>
+
+            </div>
+            <div class="dj">
+              <img src="https://qph.cf2.quoracdn.net/main-qimg-9ce1dcacbca9d22b00e6db84df936347" width="200px" />
+            </div>
+          </header>
+          <p id='head1' class='headertext'>Hello नमस्ते</p>
+          <p id='head2' class='headertext'>Welcome To My Website </p>
+          <p id='head3' class='headertext'>Let Me Introduce Myself</p>
+          <p id='head4' class='headertext'>I'm Sahil And I'm A Student Of LDCE</p>
+          <p id='head5' class='headertext'>My Profile</p>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+      <div class="links">
+        
+         <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="skills.html" style="--i: 0.1s;">Skills</a>
+          </li>
+          <li>
+          <a href="cyber.html" style="--i: 0.15s;">Cyber Security</a>
+          </li>
+          <li>
+            <a href="project.html" style="--i: 0.2s;">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.25s;">About</a>
+          </li>
+          <li>
+            <a href="contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+  
+       
+      </div>
+    </div>
+
+    <script>
+      var audio = new Audio("v.mp3");
+      
+      audio.oncanplaythrough = function(){
+      audio.play();
+      }
+      
+      audio.loop = false;
+      
+      audio.onended = function(){
+      audio.play();
+      }
+      
+      </script>
+<script src="date.js"></script>
+
+<script src="home.js"></script>
+
+
+</body>
+</html>
